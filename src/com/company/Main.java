@@ -3,6 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("test");
+
+        Simulation sim = new Simulation();
+        System.out.println(sim.stroke);
     }
 }
