@@ -6,5 +6,6 @@ public class Main {
 
         Simulation sim = new Simulation();
         System.out.println(sim.stroke);
+        System.out.println(sim.hospital);
     }
 }
