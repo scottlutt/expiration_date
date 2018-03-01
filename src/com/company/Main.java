@@ -8,5 +8,6 @@ public class Main {
         System.out.println(sim.stroke);
         System.out.println(sim.hospital);
         System.out.println("Hello World");
+        System.out.println("Jesus Christ");
     }
 }
