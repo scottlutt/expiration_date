@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Simulation extends Main{
 
@@ -44,7 +45,16 @@ public class Simulation extends Main{
         System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
 
         Patient p = new Patient("Sally", stroke);
-        System.out.println(p);
+        for(int i = 0; i< 9; i++)
+        {
+            Random r = new Random();
+            int first = r.nextInt(3);
+            int second = r.nextInt(98);
+            Patient test = new Patient(names[second], disList.get(first));
+            patList.add(test);
+        }
+
+        System.out.println(patList);
     }
 
 }
