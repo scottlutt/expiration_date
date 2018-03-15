@@ -30,10 +30,15 @@ public class Simulation extends Main{
         Disease stroke = new Disease("stroke", 7, hospital);
         Disease heartAttack = new Disease("Heart Attack", 5, trauma);
         Disease flu = new Disease("Flu", 1, urgentCare);
+        Disease lungCancer = new Disease("Lung Cancer", 25, hospital);
+        Disease brainTumorumor = new Disease("Brain Tumor", 15, hospital);
+
 
         disList.add(stroke);
         disList.add(heartAttack);
         disList.add(flu);
+        disList.add(lungCancer);
+        disList.add(brainTumorumor);
 
         //System.out.println(hospital);
         System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
