@@ -20,9 +20,9 @@ public class Simulation extends Main{
             "Sydney","Paige","Victoria","Nevaeh","Jessica","Leah","Rachel","Addison","Megan","Gabriella","Angelina","Kylie","Alexandra",
             "Kaitlyn","Lillian","Kaylee","Gabrielle","Allison","Makayla","Katherine","Katelyn","Jenna"};
 
-        Facilities hospital = new Facilities("Mount Nittany Hospital", 200, "Hospital");
-        Facilities urgentCare = new Facilities("Med Express", 50, "Urgent Care");
-        Facilities trauma = new Facilities("Trauma center", 100, "Trauma");
+        Facilities hospital = new Facilities("Mount Nittany Hospital", 6, "Hospital");
+        Facilities urgentCare = new Facilities("Med Express", 6, "Urgent Care");
+        Facilities trauma = new Facilities("Trauma center", 6, "Trauma");
 
         facList.add(hospital);
         facList.add(urgentCare);
@@ -44,11 +44,10 @@ public class Simulation extends Main{
         //System.out.println(hospital);
         System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
 
-        Patient p = new Patient("Sally", stroke);
         for(int i = 0; i< 9; i++)
         {
             Random r = new Random();
-            int first = r.nextInt(3);
+            int first = r.nextInt(5);
             int second = r.nextInt(98);
             Patient test = new Patient(names[second], disList.get(first));
             patList.add(test);
