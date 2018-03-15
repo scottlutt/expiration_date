@@ -38,7 +38,8 @@ public class Simulation extends Main{
         //System.out.println(hospital);
         System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
 
-        //Patient p = new Patient();
+        Patient p = new Patient("Sally", stroke);
+        System.out.println(p);
     }
 
 }

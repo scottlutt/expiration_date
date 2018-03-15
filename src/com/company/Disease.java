@@ -19,6 +19,10 @@ public class Disease {
         return f.getFacility();
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString()
     {
