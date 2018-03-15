@@ -23,6 +23,10 @@ public class Disease {
         return name;
     }
 
+    public int getNumTurns() {
+        return numTurns;
+    }
+
     @Override
     public String toString()
     {

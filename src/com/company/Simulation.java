@@ -42,7 +42,7 @@ public class Simulation extends Main{
         disList.add(brainTumorumor);
 
         //System.out.println(hospital);
-        System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
+        //System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
 
         for(int i = 0; i< 9; i++)
         {
@@ -54,6 +54,14 @@ public class Simulation extends Main{
         }
 
         System.out.println(patList);
+
+        for(int i =0; i<patList.size();i++)
+        {
+            patList.get(i).decNumTurns(patList.get(i).getNumTurns());// make a copy of turn count then decrease using method
+        }
+        System.out.println(patList);
+        //System.out.println(patList.get(0).getNumTurns()-1);
+        System.out.println(disList);
     }
 
 }
