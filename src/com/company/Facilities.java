@@ -4,11 +4,17 @@ public class Facilities {
 
     private String name;
     private int numBeds;
+    private String facility;
 
-    public Facilities(String name, int numBeds)
+    public Facilities(String name, int numBeds, String facility)
     {
         this.name = name;
         this.numBeds = numBeds;
+        this.facility = facility;
+    }
+
+    public String getFacility() {
+        return facility;
     }
 
     @Override

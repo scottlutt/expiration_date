@@ -15,9 +15,13 @@ public class Disease {
         //this.tTurn = tTurn;
     }
 
+    public String getCorrectLocation(Facilities f) {
+        return f.getFacility();
+    }
+
     @Override
     public String toString()
     {
-        return "Disease name: " + this.name + "     Number of Turns: " + this.numTurns + "      Correct Location: " + this.correctLocation;
+        return "Disease name: " + this.name + "     Number of Turns: " + this.numTurns + "      Correct Location: ";
     }
 }
