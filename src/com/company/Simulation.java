@@ -8,6 +8,8 @@ public class Simulation extends Main{
     {
         ArrayList<Facilities> facList = new ArrayList<Facilities>();
         ArrayList<Disease> disList = new ArrayList<Disease>();
+        ArrayList<Patient> patList = new ArrayList<Patient>();
+        //String names[99] = {};
 
 
         Facilities hospital = new Facilities("Mount Nittany Hospital", 200, "Hospital");
@@ -28,6 +30,8 @@ public class Simulation extends Main{
 
         //System.out.println(hospital);
         System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
+
+        //Patient p = new Patient();
     }
 
 }
