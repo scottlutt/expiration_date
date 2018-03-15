@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0fc4aaf-2943-4e27-b37a-54c7b10a0c63" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Disease.java" afterPath="$PROJECT_DIR$/src/com/company/Disease.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Patient.java" afterPath="$PROJECT_DIR$/src/com/company/Patient.java" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Simulation.java" afterPath="$PROJECT_DIR$/src/com/company/Simulation.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,8 +58,8 @@
       <file leaf-file-name="Simulation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Simulation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="59" column="98" lean-forward="false" selection-start-line="59" selection-start-column="98" selection-end-line="59" selection-end-column="98" />
+            <state relative-caret-position="307">
+              <caret line="68" column="41" lean-forward="true" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#197#209#0" expanded="true" />
@@ -293,12 +291,12 @@
       <workItem from="1520973860677" duration="2702000" />
       <workItem from="1521142770345" duration="466000" />
       <workItem from="1521146603888" duration="2806000" />
-      <workItem from="1521150978071" duration="1018000" />
+      <workItem from="1521150978071" duration="1332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7978000" />
+    <option name="totallyTimeSpent" value="8292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="0" />
@@ -960,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="59" column="98" lean-forward="false" selection-start-line="59" selection-start-column="98" selection-end-line="59" selection-end-column="98" />
+        <state relative-caret-position="307">
+          <caret line="68" column="41" lean-forward="true" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#197#209#0" expanded="true" />

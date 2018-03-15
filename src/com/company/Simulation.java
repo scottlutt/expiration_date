@@ -63,5 +63,9 @@ public class Simulation extends Main{
         //System.out.println(patList.get(0).getNumTurns()-1);
         System.out.println(disList);
     }
+    /* First and last numbers should be the same with a zero in between
+       this means that at the for loop is actually decreasing the turn value associated with the patient.
+       We may have to store the turn count within the patient object (copy) and decrement that instead of
+       making a temporary copy in scope*/
 
 }
