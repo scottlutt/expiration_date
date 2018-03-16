@@ -5,6 +5,20 @@ import java.util.Random;
 
 public class Simulation extends Main{
 
+    private int totalTurns = 30;
+    private int deathLimit = 5;
+    private int deathCount = 0;
+
+    public void decTotalTurns()
+    {
+        totalTurns--;
+    }
+
+    public void incDeathCount()
+    {
+        deathCount++;
+    }
+
     public void play()
     {
         ArrayList<Facilities> facList = new ArrayList<Facilities>();
@@ -19,6 +33,7 @@ public class Simulation extends Main{
             "Chloe","Natalie","Morgan","Gianna","Taylor","Brianna","Brooke","Hailey","Ashley","Riley","Lily","Savannah","Mackenzie",
             "Sydney","Paige","Victoria","Nevaeh","Jessica","Leah","Rachel","Addison","Megan","Gabriella","Angelina","Kylie","Alexandra",
             "Kaitlyn","Lillian","Kaylee","Gabrielle","Allison","Makayla","Katherine","Katelyn","Jenna"};
+
 
         Facilities hospital = new Facilities("Mount Nittany Hospital", 6, "Hospital");
         Facilities urgentCare = new Facilities("Med Express", 6, "Urgent Care");
@@ -42,8 +57,9 @@ public class Simulation extends Main{
         disList.add(brainTumorumor);
 
         //System.out.println(hospital);
-        //System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
+        //System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital)); //KEEP THIS LINE
 
+        //creates patient objects and stores them in an ArrayList
         for(int i = 0; i< 10; i++)
         {
             Random r = new Random();
@@ -69,6 +85,7 @@ public class Simulation extends Main{
         System.out.println(p);
         System.out.println(stroke + " " + stroke.getCorrectLocation(hospital));*/
     }
+
     /* First and last numbers should be the same with a zero in between
        this means that at the for loop is actually decreasing the turn value associated with the patient.
        We may have to store the turn count within the patient object (copy) and decrement that instead of
