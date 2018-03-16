@@ -44,7 +44,7 @@ public class Simulation extends Main{
         //System.out.println(hospital);
         //System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital));
 
-        for(int i = 0; i< 9; i++)
+        for(int i = 0; i< 10; i++)
         {
             Random r = new Random();
             int first = r.nextInt(5);
@@ -55,13 +55,19 @@ public class Simulation extends Main{
 
         System.out.println(patList);
 
-        for(int i =0; i<patList.size();i++)
+        /*for(int i =0; i<patList.size();i++) //Not sure what this does anymore
         {
             patList.get(i).decNumTurns(patList.get(i).getNumTurns());// make a copy of turn count then decrease using method
         }
         System.out.println(patList);
         //System.out.println(patList.get(0).getNumTurns()-1);
-        System.out.println(disList);
+        System.out.println(disList);*/
+
+        /*Patient p = new Patient("Charlie", stroke); //Tests to make sure decNumTurns works
+        System.out.println(p);
+        p.decNumTurns();
+        System.out.println(p);
+        System.out.println(stroke + " " + stroke.getCorrectLocation(hospital));*/
     }
     /* First and last numbers should be the same with a zero in between
        this means that at the for loop is actually decreasing the turn value associated with the patient.

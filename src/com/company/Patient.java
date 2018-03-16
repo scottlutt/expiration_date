@@ -6,11 +6,13 @@ public class Patient {
 
     private String name;
     private Disease disease;
+    private int patientTurns;
 
     public Patient(String name, Disease disease)
     {
         this.name = name;
         this.disease = disease;
+        patientTurns = disease.getNumTurns();
     }
 
     public int getNumTurns()
@@ -19,16 +21,16 @@ public class Patient {
         return turn;
     }
 
-    public int decNumTurns(int i)
+    public void decNumTurns()
     {
-        return i-1;
+        patientTurns--;
     }
 
 
     @Override
     public String toString()
     {
-        return "Patient Name: " +name+ " Disease: " +disease.getName() + " Turns:" + disease.getNumTurns();
+        return "Patient Name: " +name+ " Disease: " +disease.getName() + " Turns:" + patientTurns +"\n";
     }
 
 
