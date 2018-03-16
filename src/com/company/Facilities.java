@@ -17,6 +17,11 @@ public class Facilities {
         return facility;
     }
 
+    public void decNumBeds()
+    {
+        numBeds--;
+    }
+
     @Override
     public String toString()
     {
