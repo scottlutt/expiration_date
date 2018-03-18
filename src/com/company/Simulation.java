@@ -89,14 +89,14 @@ public class Simulation extends Main{
 
               decrease total turn count*/
         //} while(totalTurns > 0 || deathCount < deathLimit);
-=======
-        System.out.println(patList);
+
+        //System.out.println(patList);
         
 
-        int patListCount = 0;
+        /*int patListCount = 0;
         do
         {
-            if(/*button click the value of [Disease].getCurrentLocation([Facility])*/)
+            if(button click the value of [Disease].getCurrentLocation([Facility]))
             {
                 //add patient to respective facility list
                 //delete patient from patList
@@ -114,9 +114,9 @@ public class Simulation extends Main{
             totalTurns --;
             //update GUI totalTurnCount display
 
-        }while(totalTurns > 0 || deathCount <= deathLimit);
+        }while(totalTurns > 0 || deathCount <= deathLimit);*/
 
->>>>>>> 7c5050ecbd7132a4736a9ef886f0431effaf980f
+
 
         /*for(int i =0; i<patList.size();i++) //Not sure what this does anymore
         {
