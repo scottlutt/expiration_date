@@ -60,7 +60,7 @@ public class Simulation extends Main{
         //System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital)); //KEEP THIS LINE
 
         //creates patient objects and stores them in an ArrayList
-        for(int i = 0; i< 10; i++)
+        /*for(int i = 0; i< 10; i++)
         {
             Random r = new Random();
             int first = r.nextInt(5);
@@ -69,8 +69,9 @@ public class Simulation extends Main{
             patList.add(test);
         }
 
-        System.out.println(patList);
+        System.out.println(patList);*/
 
+        //int patientListIndex = 0;
         //do {
             //game code in here
             /*Traverse through patient list and display in GUI
@@ -86,7 +87,7 @@ public class Simulation extends Main{
               -update display count in GUI
 
               decrease total turn count*/
-        //} while(totalTurns > 0 && deathCount < 5);
+        //} while(totalTurns > 0 || deathCount < deathLimit);
 
         /*for(int i =0; i<patList.size();i++) //Not sure what this does anymore
         {
@@ -96,11 +97,12 @@ public class Simulation extends Main{
         //System.out.println(patList.get(0).getNumTurns()-1);
         System.out.println(disList);*/
 
-        /*Patient p = new Patient("Charlie", stroke); //Tests to make sure decNumTurns works
+        Patient p = new Patient("Charlie", stroke); //Tests to make sure decNumTurns works
         System.out.println(p);
         p.decNumTurns();
         System.out.println(p);
-        System.out.println(stroke + " " + stroke.getCorrectLocation(hospital));*/
+        System.out.println(p.getDisease().getFacilityName());
+        //System.out.println(stroke + " " + stroke.getCorrectLocation(hospital));
     }
 
     /* First and last numbers should be the same with a zero in between

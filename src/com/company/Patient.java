@@ -26,11 +26,19 @@ public class Patient {
         patientTurns--;
     }
 
+    public String getDiseaseName()
+    {
+        return disease.getName();
+    }
+
+    public Disease getDisease() {
+        return disease;
+    }
 
     @Override
     public String toString()
     {
-        return "Patient Name: " +name+ " Disease: " +disease.getName() + " Turns:" + patientTurns +"\n";
+        return "Patient Name: " +name+ " Disease: " +disease.getName() + " Turns:" + patientTurns + "   Disease turns: " + disease.getNumTurns()+"\n";
     }
 
 

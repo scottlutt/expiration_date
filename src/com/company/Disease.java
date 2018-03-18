@@ -27,6 +27,11 @@ public class Disease {
         return numTurns;
     }
 
+    public String getFacilityName()
+    {
+        return correctLocation.getFacility();
+    }
+
     @Override
     public String toString()
     {
