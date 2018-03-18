@@ -70,23 +70,31 @@ public class Simulation extends Main{
         }
 
         System.out.println(patList);
+        
 
-        //do {
-            //game code in here
-            /*Traverse through patient list and display in GUI
-              if the value of the button they click is equal to [Disease].getCorrectLocation([Facilities]))
-              -move that patient out of patient list and into facility specific list
-              -update and display patient in GUI
-              -decrease patient turn count
-              -decrease facilily numBed count associated with the patient
-              -update display in GUI
-              else
-              -delete patient from patient list (they die)
-              -increase death count
-              -update display count in GUI
+        int patListCount = 0;
+        do
+        {
+            if(/*button click the value of [Disease].getCurrentLocation([Facility])*/)
+            {
+                //add patient to respective facility list
+                //delete patient from patList
 
-              decrease total turn count*/
-        //} while(totalTurns > 0 && deathCount < 5);
+                //decrease patientTurnCount
+                //decrease numBeds in facility
+                //update GUI boxes displaying patients, facilities numBeds attribute, show remaining patientTurns
+            }
+            else {
+                //delete patient from patList;
+                deathCount ++;
+                //notify user that patient has expired
+                //update GUI deathCount number
+            }
+            totalTurns --;
+            //update GUI totalTurnCount display
+
+        }while(totalTurns > 0 || deathCount <= deathLimit);
+
 
         /*for(int i =0; i<patList.size();i++) //Not sure what this does anymore
         {
