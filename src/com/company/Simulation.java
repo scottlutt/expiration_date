@@ -69,6 +69,7 @@ public class Simulation extends Main{
             patList.add(test);
         }
 
+<<<<<<< HEAD
         System.out.println(patList);*/
 
         //int patientListIndex = 0;
@@ -88,6 +89,34 @@ public class Simulation extends Main{
 
               decrease total turn count*/
         //} while(totalTurns > 0 || deathCount < deathLimit);
+=======
+        System.out.println(patList);
+        
+
+        int patListCount = 0;
+        do
+        {
+            if(/*button click the value of [Disease].getCurrentLocation([Facility])*/)
+            {
+                //add patient to respective facility list
+                //delete patient from patList
+
+                //decrease patientTurnCount
+                //decrease numBeds in facility
+                //update GUI boxes displaying patients, facilities numBeds attribute, show remaining patientTurns
+            }
+            else {
+                //delete patient from patList;
+                deathCount ++;
+                //notify user that patient has expired
+                //update GUI deathCount number
+            }
+            totalTurns --;
+            //update GUI totalTurnCount display
+
+        }while(totalTurns > 0 || deathCount <= deathLimit);
+
+>>>>>>> 7c5050ecbd7132a4736a9ef886f0431effaf980f
 
         /*for(int i =0; i<patList.size();i++) //Not sure what this does anymore
         {
