@@ -38,7 +38,7 @@ public class Patient {
     @Override
     public String toString()
     {
-        return "Patient Name: " +name+ " Disease: " +disease.getName() + " Turns:" + patientTurns + "   Disease turns: " + disease.getNumTurns()+"\n";
+        return "Patient Name: " +name+ " Disease: " +disease.getName() + " Turns:" + patientTurns +"\n";
     }
 
 

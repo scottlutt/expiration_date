@@ -59,8 +59,8 @@ public class Simulation extends Main{
         //System.out.println(hospital);
         //System.out.println(stroke+ " "+stroke.getCorrectLocation(hospital)); //KEEP THIS LINE
 
-        //creates patient objects and stores them in an ArrayList
-        /*for(int i = 0; i< 10; i++)
+        //creates patient objects and stores them in an ArrayList. Currently 50 patients
+        for(int i = 0; i < 51; i++)
         {
             Random r = new Random();
             int first = r.nextInt(5);
@@ -69,30 +69,9 @@ public class Simulation extends Main{
             patList.add(test);
         }
 
-<<<<<<< HEAD
-        System.out.println(patList);*/
+        System.out.println(patList);
 
-        //int patientListIndex = 0;
-        //do {
-            //game code in here
-            /*Traverse through patient list and display in GUI
-              if the value of the button they click is equal to [Disease].getCorrectLocation([Facilities]))
-              -move that patient out of patient list and into facility specific list
-              -update and display patient in GUI
-              -decrease patient turn count
-              -decrease facilily numBed count associated with the patient
-              -update display in GUI
-              else
-              -delete patient from patient list (they die)
-              -increase death count
-              -update display count in GUI
-
-              decrease total turn count*/
-        //} while(totalTurns > 0 || deathCount < deathLimit);
-
-        //System.out.println(patList);
-        
-
+        //Logic for the controller that connects view and model
         /*int patListCount = 0;
         do
         {
@@ -117,26 +96,12 @@ public class Simulation extends Main{
         }while(totalTurns > 0 || deathCount <= deathLimit);*/
 
 
-
-        /*for(int i =0; i<patList.size();i++) //Not sure what this does anymore
-        {
-            patList.get(i).decNumTurns(patList.get(i).getNumTurns());// make a copy of turn count then decrease using method
-        }
-        System.out.println(patList);
-        //System.out.println(patList.get(0).getNumTurns()-1);
-        System.out.println(disList);*/
-
-        Patient p = new Patient("Charlie", stroke); //Tests to make sure decNumTurns works
+        //Tests decNumTurns
+        /*Patient p = new Patient("Charlie", stroke); //Tests to make sure decNumTurns works
         System.out.println(p);
         p.decNumTurns();
         System.out.println(p);
         System.out.println(p.getDisease().getFacilityName());
-        //System.out.println(stroke + " " + stroke.getCorrectLocation(hospital));
+        //System.out.println(stroke + " " + stroke.getCorrectLocation(hospital));*/
     }
-
-    /* First and last numbers should be the same with a zero in between
-       this means that at the for loop is actually decreasing the turn value associated with the patient.
-       We may have to store the turn count within the patient object (copy) and decrement that instead of
-       making a temporary copy in scope*/
-
 }
